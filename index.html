@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!--Start button-->
+    <div class="start_btn">
+        <button id="btn1">Quiz Start</button>
+        <span>Start Your Quiz Here.</span> 
+    </div>
+
+    <!--Info Box-->
+    <div class="info_box">
+        <div class="info_title">
+            <span>Some Rules Of This Quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. You will have only <span>30 seconds</span> for each quetion.</div>
+            <div class="info">2. Once you select your answer, you can't reselect. </div>
+            <div class="info">3. You can't select any option when time goes off.</div>
+            <div class="info">4. You can't exit your Quiz onece you log in, you have to complete the Quiz.</div>
+            <div class="info">5. You will get the points on the basis of your correct answer. 
+                <p>1 point for each correct answer.</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="exit" id="exit">Exit Quiz</button>
+            <button class="continue" id="continue">Continue</button>
+        </div>
+    </div>
+
+    <!--Quetion list-->
+
+    <div class="quiz-box">
+        <header>
+            <div class="title">Your Favorite Quiz is Here</div>
+            <div class="timer">
+                <div class="text">Time Left</div>
+                <div class="timeleft">30</div>
+            </div>
+            
+        </header>
+
+        <section>
+            <div class="quetion">
+                <!--<span>1. What is the scientific name of a butterfly?</span>-->
+            </div>
+            <div class="option-list" id="option-list">
+               <!--<div class="option">
+                    <span>Apis</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Coleoptera</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Formicidae</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Rhopalocera</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>-->
+            </div>
+        </section>
+
+        <footer>
+            <div class="quetions-left" >
+                <!--<span><p>1</p>of <p>5</p>Questons</span>-->
+            </div>
+            <button class="next-btn" id="next-btn">Next Que</button>
+        </footer>
+    </div>
+
+    <!--Result Box-->
+
+    <div class="result-box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+
+        <div class="complete">You Have Completed The Quiz!</div>
+        <div class="result">
+           <!-- <span>and sorry, You got only <p>2</p>out of <p>5</p></span>-->
+        </div>
+        <div class="buttons">
+            <button class="restart">Try Again</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+
+    <script src="./index.js"></script>
+    <script src="./quetions.js"></script>
+</body>
+</html>
